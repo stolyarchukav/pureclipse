@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="name.slide.pureclipse.feature"
+      label="Pureclipse plugin for PureMVC"
+      version="1.5.1">
+
+   <description url="http://www.slide.name/pureclipse/">
+      With the Pureclipse you will absolutely increase your development
+speed because of it&apos;s powerfull but still simple templates. It
+is not just a template system, it is shaped for PureMVC and Fabrication.
+Features: building PureMVC/Fabrication templates for Commands,
+Proxies and Mediators.
+   </description>
+
+   <copyright url="http://www.slide.name/pureclipse/">
+      (c) SlideUI 2010
+All right reserved.
+   </copyright>
+
+   <license url="http://www.slide.name/pureclipse/">
+      License to Use Pureclipse:
+
+Under this License Agreement, SlideUI grants to the Licensee a non-exclusive, non-transferable, non-sublicensable right to install, access and use the Pureclipse on up to two computers in accordance with the Documentation and on and subject to the terms and conditions set out in this License Agreement.   
+
+This license permits use by a single user only.  Additional licenses of the Pureclipse must be purchased if the Pureclipse is used by more than one person or on more than two computers.  The Pureclipse may not be used on a computer network unless only one person can use the Software licensed hereunder at a time.
+
+The Licensee may make one backup copy of the Pureclipse, provided the backup copy is not installed or used on any computer except where required for recovery purposes on the same computers on which the Pureclipse was originally installed and licensed for use hereunder.
+   </license>
+
+   <url>
+      <update label="slide.name" url="http://slide.name/pureclipse/1.5/update"/>
+   </url>
+
+   <plugin
+         id="name.slide.pureclipse"
+         download-size="0"
+         install-size="0"
+         version="1.5.1"
+         unpack="false"/>
+
+</feature>

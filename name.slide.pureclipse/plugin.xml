@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.ui.newWizards">
+      <category
+            id="name.slide.pureclipse.category"
+            name="Pureclipse">
+      </category>
+      <wizard
+            name="Command"
+            icon="icons/pureclipse.png"
+            category="name.slide.pureclipse.category"
+            class="name.slide.pureclipse.wizards.CommandWizard"
+            id="name.slide.pureclipse.wizards.CommandWizard">
+         <description>
+            Create new Command wizard
+         </description>
+      </wizard>
+      <wizard
+            category="name.slide.pureclipse.category"
+            class="name.slide.pureclipse.wizards.ProxyWizard"
+            icon="icons/pureclipse.png"
+            id="name.slide.pureclipse.wizards.ProxyWizard"
+            name="Proxy">
+         <description>
+            Create new Proxy wizard
+         </description>
+      </wizard>
+   </extension> <extension
+         point="org.eclipse.ui.popupMenus">
+      <viewerContribution
+            id="name.slide.pureclipse.popup.editor"
+            targetID="#TextEditorContext">
+         <menu
+               icon="icons/pureclipse.png"
+               id="name.slide.pureclipse.popup.group.snippets"
+               label="Pureclipse snippets..."
+               path="additions">
+            <separator
+                  name="editor">
+            </separator>
+         </menu>
+         <action
+               class="name.slide.pureclipse.actions.editor.AddConstant"
+               id="name.slide.pureclipse.actions.editor.AddConstant"
+               label="Add constant..."
+               menubarPath="name.slide.pureclipse.popup.group.snippets/editor">
+         </action>
+         <action
+               class="name.slide.pureclipse.actions.editor.RetrieveInstance"
+               id="name.slide.pureclipse.actions.editor.RetrieveInstance"
+               label="Retrieve instance..."
+               menubarPath="name.slide.pureclipse.popup.group.snippets/editor">
+         </action>
+      </viewerContribution>
+      <viewerContribution
+            id="name.slide.pureclipse.popup.editor"
+            targetID="#com.adobe.flexide.as.core.ContextMenuContext">
+         <menu
+               icon="icons/pureclipse.png"
+               id="name.slide.pureclipse.popup.group.snippets"
+               label="Pureclipse snippets..."
+               path="additions">
+            <separator
+                  name="editor">
+            </separator>
+         </menu>
+         <action
+               class="name.slide.pureclipse.actions.editor.AddConstant"
+               id="name.slide.pureclipse.actions.editor.AddConstant"
+               label="Add constant..."
+               menubarPath="name.slide.pureclipse.popup.group.snippets/editor">
+         </action>
+         <action
+               class="name.slide.pureclipse.actions.editor.RetrieveInstance"
+               id="name.slide.pureclipse.actions.editor.RetrieveInstance"
+               label="Retrieve instance..."
+               menubarPath="name.slide.pureclipse.popup.group.snippets/editor">
+         </action>
+      </viewerContribution>
+      <viewerContribution
+            id="name.slide.pureclipse.popup.packageexplorer"
+            targetID="org.eclipse.jdt.ui.PackageExplorer">
+         <menu
+               icon="icons/pureclipse.png"
+               id="name.slide.pureclipse.popup.group"
+               label="Pureclipse"
+               path="additions">
+            <separator
+                  name="patterns">
+            </separator>
+            <separator
+                  name="utils">
+            </separator>
+            <separator
+                  name="help">
+            </separator>
+         </menu>
+         <action
+               class="name.slide.pureclipse.actions.wizard.Proxy"
+               enablesFor="1"
+               id="name.slide.pureclipse.actions.wizard.Proxy"
+               label="Proxy..."
+               menubarPath="name.slide.pureclipse.popup.group/patterns">
+         </action>
+         <action
+               class="name.slide.pureclipse.actions.wizard.MediatorForThisView"
+               enablesFor="1"
+               id="name.slide.pureclipse.actions.wizard.MediatorForThisView"
+               label="Mediator for this View..."
+               menubarPath="name.slide.pureclipse.popup.group/patterns">
+         </action>
+         <action
+               class="name.slide.pureclipse.actions.wizard.Command"
+               enablesFor="1"
+               id="name.slide.pureclipse.actions.wizard.Command"
+               label="Command..."
+               menubarPath="name.slide.pureclipse.popup.group/patterns">
+         </action>
+         <action
+               class="name.slide.pureclipse.actions.wizard.BuildStructure"
+               enablesFor="1"
+               id="name.slide.pureclipse.actions.wizard.BuildStructure"
+               label="Build MVC structure"
+               menubarPath="name.slide.pureclipse.popup.group/utils">
+         </action>
+         <action
+               class="name.slide.pureclipse.help.Help"
+               enablesFor="1"
+               id="name.slide.pureclipse.help.Help"
+               label="Help"
+               menubarPath="name.slide.pureclipse.popup.group/help">
+         </action>
+      </viewerContribution>
+      <viewerContribution
+            id="name.slide.pureclipse.popup.packageexplorer"
+            targetID="com.adobe.flexbuilder.packageexplorer">
+         <menu
+               icon="icons/pureclipse.png"
+               id="name.slide.pureclipse.popup.group"
+               label="Pureclipse"
+               path="additions">
+            <separator
+                  name="patterns">
+            </separator>
+            <separator
+                  name="utils">
+            </separator>
+            <separator
+                  name="help">
+            </separator>
+         </menu>
+         <action
+               class="name.slide.pureclipse.actions.wizard.Proxy"
+               enablesFor="1"
+               id="name.slide.pureclipse.actions.wizard.Proxy"
+               label="Proxy..."
+               menubarPath="name.slide.pureclipse.popup.group/patterns">
+         </action>
+         <action
+               class="name.slide.pureclipse.actions.wizard.MediatorForThisView"
+               enablesFor="1"
+               id="name.slide.pureclipse.actions.wizard.MediatorForThisView"
+               label="Mediator for this View..."
+               menubarPath="name.slide.pureclipse.popup.group/patterns">
+         </action>
+         <action
+               class="name.slide.pureclipse.actions.wizard.Command"
+               enablesFor="1"
+               id="name.slide.pureclipse.actions.wizard.Command"
+               label="Command..."
+               menubarPath="name.slide.pureclipse.popup.group/patterns">
+         </action>
+         <action
+               class="name.slide.pureclipse.actions.wizard.BuildStructure"
+               enablesFor="1"
+               id="name.slide.pureclipse.actions.wizard.BuildStructure"
+               label="Build MVC structure"
+               menubarPath="name.slide.pureclipse.popup.group/utils">
+         </action>
+         <action
+               class="name.slide.pureclipse.help.Help"
+               enablesFor="1"
+               id="name.slide.pureclipse.help.Help"
+               label="Help"
+               menubarPath="name.slide.pureclipse.popup.group/help">
+         </action>
+      </viewerContribution>
+   </extension>
+
+</plugin>

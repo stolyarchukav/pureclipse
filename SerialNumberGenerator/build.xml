@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project default="build" name="build">
+	<target name="build">
+		<mkdir dir="target/classes"/>
+		<copy todir="target/classes">
+			<fileset dir="../name.slide.pureclipse/bin" includes="**/LicenseValidator.class"/>
+		</copy>
+		<javac destdir="target/classes" srcdir="src"/>
+		<jar destfile="target/generator.jar" basedir="target/classes">
+			<manifest>
+		        <attribute name="Main-Class" value="name.slide.pureclipse.license.SerialNumberGenerator"/>
+			</manifest>
+		</jar>
+	</target>
+</project>

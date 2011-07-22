@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <description name="Pureclipse" url="http://slide.name/pureclipse/1.5/update">
+      PureMVC plugin for Eclipse/Flash Builder
+   </description>
+   <feature url="features/name.slide.pureclipse.feature_1.5.1.jar" id="name.slide.pureclipse.feature" version="1.5.1">
+      <category name="name.slide.pureclipse"/>
+   </feature>
+   <category-def name="name.slide.pureclipse" label="Pureclipse"/>
+</site>
